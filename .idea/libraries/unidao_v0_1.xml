@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="unidao-v0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../UniDao/target/unidao-v0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../S4-Java-Framework/.framework/framework.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

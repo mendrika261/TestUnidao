@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<app>
+    <config id="auth">
+        <session name="profile" />
+        <profiles>
+            <profile name="AUTH_PROFILE_ADMIN" value="admin" />
+            <profile name="AUTH_PROFILE_USER" value="user" />
+        </profiles>
+        <redirections>
+            <redirect name="AUTH_REDIRECT_LOGIN" value="/" />
+            <redirect name="AUTH_REDIRECT_LOGOUT" value="/login" />
+        </redirections>
+    </config>
+</app>

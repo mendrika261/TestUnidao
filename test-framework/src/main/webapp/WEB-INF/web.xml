@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- This is the main servlet of the framework -->
+    <servlet>
+        <servlet-name>FrontServlet</servlet-name>
+        <servlet-class>etu2024.framework.servlet.FrontServlet</servlet-class>
+        <init-param>
+            <!-- The root package of the project must set here (with framework.sh generally)-->
+            <param-name>PACKAGE_ROOT</param-name>
+            <param-value>/Users/mendrika261/IdeaProjects/TestUnidao2/test-framework/src/main/java/</param-value>
+        </init-param>
+        <init-param>
+            <!-- The config file of the project -->
+            <param-name>CONFIG_FILE</param-name>
+            <param-value>/Users/mendrika261/IdeaProjects/TestUnidao2/app.xml</param-value>
+        </init-param>
+    </servlet>
+
+    <!--
+        All the requests are redirected to the FrontServlet
+    -->
+    <servlet-mapping>
+        <servlet-name>FrontServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
